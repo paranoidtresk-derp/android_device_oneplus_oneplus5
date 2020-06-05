@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system
 
 # Keylayouts
+TARGET_USES_HARDWARE_KEYS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
     $(LOCAL_PATH)/rootdir/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl \
@@ -99,6 +100,11 @@ PRODUCT_PACKAGES += \
     MSM8998CommonSystemUIRes \
     MSM8998CommonSystemUIPARes \
     MSM8998CommonTelephonyRes
+
+# Per-device RRO Overlays
+PRODUCT_PACKAGES += \
+    OnePlus5FrameworksPARes \
+    OnePlus5TFrameworksRes
 
 # Power
 PRODUCT_PACKAGES += \
